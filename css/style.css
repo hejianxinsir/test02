@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    background: gray;
+    background-color: #efefef;
+    color: black;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ul,ol,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topNavBar{
+    margin-top: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.topNavBar > a{
+    float: left;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "fredoka one";
+    margin-left: 16px;
+}
+.topNavBar > a > .rs{
+    color: #e8676b;
+}
+.topNavBar > a > .card{
+    color: #9a9da2;
+    margin-left: 2px;
+}
+
+.topNavBar > nav > ul{
+    list-style: none;
+    float: right;
+    margin-right: 10px;
+}
+
+.topNavBar > nav > ul > li{
+    float: left;
+    margin: 0 18px;
+    border-top: 2px solid transparent;  
+    border-bottom: 2px solid transparent;
+    padding-bottom: 7px;
+}
+.topNavBar > nav > ul > li:hover{
+    border-bottom: 2px solid #f85063;
+}
+
+
+.topNavBar > nav > ul a{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "open sans";
+    color: rgba(255,255,255,0.7);
+}
+
+.topBanner{
+    height: 515px;/*错过的地方*/
+    background-image: url("../img/topbanner.jpg");/*错过的地方*/
+    background-position: center center;/*错过的地方*/
+    background-size: cover;/*错过的地方*/
+}
+.topBanner > .mask{
+    height: 515px;
+    background-color: rgba(0,0,0,0.4);/*错过的地方*/
+}
+
+
+main{
+    max-width: 930px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: -375px;
+    box-shadow: 0px 1px 2px 1px rgba(148,143,148,0.3);
+}
+
+main > .photoAndProfile{
+    padding: 56px 0 42px 50px;
+}
+
+main > .photoAndProfile > .myPhoto{
+    float: left;
+}
+
+main > .photoAndProfile > .profile{
+    float: left;
+    margin-left: 62px;
+    margin-top: 3px;
+    width: 470px;
+}
+
+main > .photoAndProfile > .profile > .welcome{
+    color: #fff;
+    font-size: 14px;
+    font-family: "open sans";
+    padding: 5px 12px;
+    background: #e8676b;
+    position: relative;
+}
+main > .photoAndProfile > .profile > .welcome > .triangle{
+    border: 10px solid transparent;
+    width: 0px;
+    border-left-color: #e8676b;
+    border-top-width: 0px;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+}
+
+main > .photoAndProfile > .profile > h1{
+    margin-top: 30px;
+    font-family: "open sans";
+    font-size: 36px;
+}
+main > .photoAndProfile > .profile > h1 > .me{
+    font-weight: normal;
+}
+main > .photoAndProfile > .profile > h2{
+    margin-top: -5px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+main > .photoAndProfile > .profile > hr{
+    border: none;
+    border: 1px solid #efefef; 
+    margin-bottom: 13px;
+}
+
+main > .photoAndProfile > .profile > dl > dt,main > .photoAndProfile > .profile > dl > dd{
+    float: left;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+main > .photoAndProfile > .profile > dl > dt{
+    width: 25.5%;
+    font-size: 12px;
+    font-weight: bold;
+}
+main > .photoAndProfile > .profile > dl > dd{
+    width: 65.9%;
+    font-size: 15px;
+    color: #9da0a7;
+}
+
+main > .media{
+    border: 1px solid red;
+    background:#e8676b;
+    text-align: center;
+}
+
+main > .media > a{
+    text-decoration: none;
+    border: 1px solid transparent;
+    display: inline-block;
+    width: 40px;
+    padding: 5px 0;
+    border-radius: 50%;
+    margin: 16px;
+}
+
+main > .media > a:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+main > .media > a > svg{
+    width: 30px;
+    height: 30px;
+    fill: white;
+    vertical-align: top;/*注意，这句话在这里会经常忘记。*/
+}
+
+
+/*main > .media{
+    border: 1px solid red;
+    text-align: center;
+    background: #f85063;
+}
+
+main > .media > a{
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    padding: 5px 0;
+    border-radius: 50%;
+    margin: 14px;
+}
+
+main > .media > a:hover{
+    background: #df4859;
+}
+
+main > .media > a svg{
+    width: 30px;
+    height: 30px;
+    fill: white;
+    vertical-align: top;
+}*/
+
+body > .download{
+    text-align: center; /*这句话加在父元素身上*/
+    line-height:16px;
+    margin: 34px 0;
+    
+}
+body > .download > a{
+    border: 1px solid #cbcdcf;
+    border-radius: 2px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #3d4451;
+    line-height: 16px;
+    padding: 21px 55px;
+    
+}
+body > .download > a:hover{
+    box-shadow: 0px 3px 5px 1px rgba(148,143,148,0.36);
+    transition: 0.2s;
+}
+body > p{
+    max-width: 930px;
+    margin: 10px auto;
+    background-color: inherit;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+body > h1.skills-title{
+    text-align: center;
+    font-size: 34px;
+    color: #3d4451;
+    margin: 30px 0;
+}
+body > section.skills{
+    max-width: 930px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px 50px 10px;
+    box-shadow: 0px 1px 2px 1px rgba(148,143,148,0.3);
+}
+body > section.skills > ol > li{
+    float: left;
+    width: 48%;
+    margin-bottom: 25px;
+}
+body > section.skills > ol > li:nth-child(even){
+    float: right;
+}
+body > section.skills > ol > li >h3{
+    font-size: 14px;
+    font-size: normal;
+}
+body > section.skills > ol > li > .progressBar{
+    height: 5px;
+    width: 100%;
+    background: #fedce0;;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+body > section.skills > ol > li > .progressBar > .bar{
+    height: 100%;
+    width: 70%;
+    background: red;
+    border-radius: 2px;
+}
