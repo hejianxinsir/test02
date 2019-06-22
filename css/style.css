@@ -290,7 +290,6 @@ body > .portfolio > nav{
     vertical-align: top;
 }
 body > .portfolio > nav > .bar{
-    border: 1px solid red;
     height: 5px;
     background: white;
     margin-top: 5px;
@@ -301,10 +300,12 @@ body > .portfolio > nav > .bar > .bar-inner{
     height: 100%;
     background: #e8676b;
     border-radius: 2px;
+    transition:all 0.3s;
 }
 body > .portfolio > nav > ol{
     display: inline-block;
     vertical-align: top;
+    margin-bottom: 7px;
 }
 body > .portfolio > nav > ol > li{
     float: left;
@@ -327,3 +328,41 @@ body > .portfolio > nav .bar.state3 > .bar-inner{
     margin-left: 140px;
     width: 60px;
 }
+
+
+/*body > .portfolio > .img123{
+    max-width: 910px;
+}
+body > .portfolio > .img123 > .img1{
+    float: left;
+}
+body > .portfolio > .img123 > .img23{
+    max-width: 290px;
+    float: right;
+    margin-left: 13px;
+}
+body > .portfolio > .img123 > .img23 > .img03{
+    margin-top: 15px;
+}*/
+
+body > .portfolio > .work{
+    position: relative;
+    height: 576px;
+}
+body > .portfolio > .work > .big,
+body > .portfolio > .work > .small{
+    position: absolute;
+}
+body > .portfolio > .work > .big{
+    top: 0;
+    left: 0;
+}
+body > .portfolio > .work > .small2{
+    top: 0;
+    left: 635px;
+}
+body > .portfolio > .work > .small3{
+    top: 298px;
+    left: 635px;
+}
+
