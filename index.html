@@ -100,13 +100,13 @@
             <li>
                 <h3>JavaScript</h3>
                 <div class="progressBar">
-                    <div class="bar"></div>
+                    <div class="bar" style="width: 30%";></div>
                 </div>
             </li>
             <li>
                 <h3>WordPress</h3>
                 <div class="progressBar">
-                    <div class="bar"></div>
+                    <div class="bar"style="width: 90%";></div>
                 </div>
             </li>
             <li>
@@ -118,17 +118,43 @@
             <li>
                 <h3>Photoshop</h3>
                 <div class="progressBar">
-                    <div class="bar"></div>
+                    <div class="bar" style="width: 97%";></div>
                 </div>
             </li>
             <li>
                 <h3>Drupal</h3>
                 <div class="progressBar">
-                    <div class="bar"></div>
+                    <div class="bar" style="width: 85%";></div>
                 </div>
             </li>
         </ol>
     </section>
+
+    <section class="portfolio">
+        <h1 class="portfolio-name">作品集</h1>
+        <nav>
+            <ol class="clearfix">
+                <li id="portfolioAll">所有</li>
+                <li id="portfolioFramework">框架</li>
+                <li id="portfolioVallina">原生 JS </li>
+            </ol>
+            <div id="portfolioBar" class="bar state1">
+                <div class="bar-inner"></div>
+            </div>
+        </nav>
+        <script>
+            portfolioAll.onclick= funciton(){
+                portfolioBar.className='bar state1'
+            }
+            portfolioFramework.onclick= funciton(){
+                portfolioBar.className='bar state2'
+            }
+            portfolioVallina.onclick= funciton(){
+                portfolioBar.className='bar state3'
+            }
+        </script>
+    </section>
+    
 </body>
 </html>
 

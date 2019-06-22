@@ -236,7 +236,8 @@ body > p{
 }
 
 
-body > h1.skills-title{
+body > h1.skills-title,
+body > .portfolio > h1{
     text-align: center;
     font-size: 34px;
     color: #3d4451;
@@ -246,8 +247,10 @@ body > section.skills{
     max-width: 930px;
     margin: 0 auto;
     background-color: #fff;
-    padding: 40px 50px 10px;
     box-shadow: 0px 1px 2px 1px rgba(148,143,148,0.3);
+}
+body > section.skills > ol{
+    padding: 40px 50px 10px;
 }
 body > section.skills > ol > li{
     float: left;
@@ -273,4 +276,54 @@ body > section.skills > ol > li > .progressBar > .bar{
     width: 70%;
     background: red;
     border-radius: 2px;
+}
+
+
+/*作品*/
+body > .portfolio{
+    text-align: center;
+    max-width: 930px;
+    margin: 0 auto;
+}
+body > .portfolio > nav{
+    display: inline-block;
+    vertical-align: top;
+}
+body > .portfolio > nav > .bar{
+    border: 1px solid red;
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+body > .portfolio > nav > .bar > .bar-inner{
+    height: 100%;
+    background: #e8676b;
+    border-radius: 2px;
+}
+body > .portfolio > nav > ol{
+    display: inline-block;
+    vertical-align: top;
+}
+body > .portfolio > nav > ol > li{
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+body > .portfolio > nav > ol > li:nth-child(1){
+    margin-left: 0;
+}
+
+body > .portfolio > nav .bar.state1 > .bar-inner{
+    margin-left: 0;
+    width: 30px;
+}
+body > .portfolio > nav .bar.state2 > .bar-inner{
+    margin-left: 65px;
+    width: 40px;
+}
+body > .portfolio > nav .bar.state3 > .bar-inner{
+    margin-left: 140px;
+    width: 60px;
 }
