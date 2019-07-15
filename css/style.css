@@ -225,7 +225,7 @@ body > .download > a{
 }
 body > .download > a:hover{
     box-shadow: 0px 3px 5px 1px rgba(148,143,148,0.36);
-    transition: 0.2s;
+    transition: 0.2s;/*经常忘*/
 }
 body > p{
     max-width: 930px;
@@ -262,12 +262,12 @@ body > section.skills > ol > li:nth-child(even){
 }
 body > section.skills > ol > li >h3{
     font-size: 14px;
-    font-size: normal;
+    font-weight: normal;
 }
 body > section.skills > ol > li > .progressBar{
     height: 5px;
     width: 100%;
-    background: #fedce0;;
+    background: #fedce0;
     margin: 5px 0;
     border-radius: 2px;
 }
